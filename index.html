@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ww-w5 · wulab</title>
+<meta name="description" content="Developer site. I build developer tooling, self-hosted services, and the automation that keeps them running.">
+<style>
+  :root {
+    --bg: #0b1020;
+    --panel: #121a30;
+    --line: #22304f;
+    --text: #e8eefc;
+    --muted: #93a3c4;
+    --accent: #6ea8ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(1200px 600px at 20% -10%, #17244a 0%, var(--bg) 55%);
+    color: var(--text);
+    font: 16px/1.7 -apple-system, "Segoe UI", "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 72px 24px 96px; }
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 8px; }
+  .avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: linear-gradient(140deg, #6ea8ff, #8f6bff);
+    display: grid; place-items: center; font-weight: 700; font-size: 22px; color: #08101f;
+  }
+  h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: .2px; }
+  .sub { color: var(--muted); margin: 0; }
+  .tagline { margin: 28px 0 0; font-size: 18px; }
+  section { margin-top: 44px; }
+  h2 { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 20px; margin-bottom: 14px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .stack { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--muted); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="avatar">ww</div>
+    <div>
+      <h1>ww-w5</h1>
+      <p class="sub">developer · wulab</p>
+    </div>
+  </header>
+
+  <p class="tagline">
+    I write developer tooling and self-hosted services, and the small automation that
+    keeps them running without me watching.
+  </p>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Runtime plugin collection</h3>
+      <p>Plugins for a local desktop runtime: persistent memory, scheduled jobs,
+         window and shell control, and a small dashboard rendered inside the app.</p>
+    </div>
+    <div class="card">
+      <h3>Self-hosted model gateway</h3>
+      <p>A local gateway fronting several model providers. Handles retries, quota,
+         and routing, and exposes one endpoint to everything on the LAN.</p>
+    </div>
+    <div class="card">
+      <h3>Automation and monitoring</h3>
+      <p>Cron-style jobs, health probes, and notification delivery over several channels.
+         Written so that a failure is loud instead of silent.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Stack</h2>
+    <div class="stack">
+      <span class="tag">TypeScript</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Python</span>
+      <span class="tag">SQLite / Postgres</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Nginx</span>
+      <span class="tag">Linux</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <p><a href="https://github.com/ww-w5">github.com/ww-w5</a></p>
+  </section>
+
+  <footer>
+    Built by hand. Hosted on GitHub Pages.
+  </footer>
+</div>
+</body>
+</html>
